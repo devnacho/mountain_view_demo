@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'mountain_view'
-gem 'haml'
+gem "haml-rails", "~> 0.9"
 gem 'bourbon'
 
 # Use ActiveModel has_secure_password
