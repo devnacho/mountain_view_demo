@@ -1,0 +1,14 @@
+.comment
+  - if properties[:image]
+    .comment__image
+      = image_tag properties[:image]
+  - else
+    .comment__image.comment__image--fallback
+      = image_tag "http://robohash.org/pepe.png?set=set1&size=300x300"
+  .comment__content
+    %h1
+      = properties[:author]
+      %span.comment__content__date
+        = properties[:date]
+    %p= properties[:body]
+

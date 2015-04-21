@@ -1,0 +1,49 @@
+.comment{
+  display: flex;
+  max-width: 800px;
+  border-bottom: 2px solid #F5F5F5;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  &__image{
+    flex: 15%;
+    text-align: center;
+    img{
+      width: 100%;
+      border-radius: 999px;
+      max-width: 100px;
+    }
+    &--fallback{
+      img{
+        border:2px solid #DADADA;
+      }
+    }
+  }
+  &__content{
+    flex: 85%;
+    margin-left: 20px;
+    h1{
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 1.4;
+      color: #888;
+      text-align: justify;
+    }
+    &__date{
+      color: #7A4BDA;
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-left: 3px;
+    }
+  }
+  @media all and (max-width: 500px) {
+    flex-direction: column;
+    &__image{
+      margin-bottom: 20px;
+    }
+  }
+}
