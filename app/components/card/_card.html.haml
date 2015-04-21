@@ -1,0 +1,16 @@
+.card{:class => "#{'card--no-img' if properties[:image_url].nil?}"}
+  - if properties[:image_url]
+    .card__image
+      %a{:href => properties[:link]}
+        %img{:alt => properties[:title], :src => properties[:image_url]}/
+  .card__content
+    %h3.card__content__title
+      %a{:href => properties[:link]}= properties[:title]
+    - if properties[:description]
+      %p= properties[:description]
+    .card__content__data
+      - if properties[:data] && properties[:data].any?
+        - properties[:data].each do |data|
+          %dl
+            %dt= data[:number]
+            %dd= data[:title]
