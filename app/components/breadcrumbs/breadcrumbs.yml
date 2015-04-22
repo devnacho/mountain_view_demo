@@ -1,0 +1,10 @@
+-
+  :breadcrumbs:
+    -
+      :title: "Books"
+      :url: "http://amazon.com/books"
+    -
+      :title: "Computers & Technology"
+      :url: "http://amazon.com/books/computers"
+    -
+      :title: "Internet & Social Media"

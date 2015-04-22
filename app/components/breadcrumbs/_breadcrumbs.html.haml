@@ -1,0 +1,7 @@
+%ul.breadcrumbs
+  - properties[:breadcrumbs].each do |breadcrumb|
+    %li
+      - if breadcrumb[:url]
+        = link_to breadcrumb[:title], breadcrumb[:url]
+      - else
+        = breadcrumb[:title]

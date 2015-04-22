@@ -1,0 +1,28 @@
+ul.breadcrumbs{
+  list-style-type: none;
+  li{
+    display: inline;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 10px;
+    a{
+      color: #888;
+      text-decoration: none;
+      &:hover{
+        color: #555;
+      }
+    }
+    &:after{
+      content: "/";
+      margin-left: 10px;
+      color: #EAEAEA;
+    }
+    &:last-child{
+      font-weight: bold;
+      color: #7A4BDA;
+      &:after{
+        content: "";
+      }
+    }
+  }
+}
