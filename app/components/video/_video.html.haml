@@ -1,5 +1,5 @@
 .responsive-video
   - if properties[:youtube_id]
-    %iframe{ allowfullscreen: "", frameborder: "0", src: "http://www.youtube.com/embed/#{ properties[:youtube_id ]}" }
+    %iframe{ allowfullscreen: "", frameborder: "0", src: "https://www.youtube.com/embed/#{ properties[:youtube_id ]}" }
   - if properties[:vimeo_id]
-    %iframe{allowfullscreen: "", frameborder: "0", mozallowfullscreen: "", src: "http://player.vimeo.com/video/#{ properties[:vimeo_id] }", webkitallowfullscreen: ""}
+    %iframe{allowfullscreen: "", frameborder: "0", mozallowfullscreen: "", src: "https://player.vimeo.com/video/#{ properties[:vimeo_id] }", webkitallowfullscreen: ""}
