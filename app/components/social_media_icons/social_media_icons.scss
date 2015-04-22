@@ -1,0 +1,62 @@
+@import "font-awesome/font-awesome";
+
+$facebook-color: #3b5998;
+$twitter-color: #4099FF;
+$youtube-color: #e52d27;
+$instagram-color: #3f729b;
+$vine-color: #00bf8f;
+$google-plus-color: #dd4b39;
+
+.social-media{
+  &__button{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 25px;
+    a{
+      display: block;
+      color: white;
+      background: #888;
+      width: 60px;
+      text-align: center;
+      color: #FFF;
+      padding-top: 0px;
+      padding: 15px 0;
+    }
+    &--facebook a{
+      background: $facebook-color;
+      &:hover{
+        background: darken($facebook-color, 7%);
+      }
+    }
+    &--twitter a{
+      background: $twitter-color;
+      &:hover{
+        background: darken($twitter-color, 7%);
+      }
+    }
+    &--youtube a{
+      background: $youtube-color;
+      &:hover{
+        background: darken($youtube-color, 7%);
+      }
+    }
+    &--instagram a{
+      background: $instagram-color;
+      &:hover{
+        background: darken($instagram-color, 7%);
+      }
+    }
+    &--vine a{
+      background: $vine-color;
+      &:hover{
+        background: darken($vine-color, 7%);
+      }
+    }
+    &--google-plus a{
+      background: $google-plus-color;
+      &:hover{
+        background: darken($google-plus-color, 7%);
+      }
+    }
+  }
+}
