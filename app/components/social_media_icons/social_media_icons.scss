@@ -59,4 +59,12 @@ $google-plus-color: #dd4b39;
       }
     }
   }
+  &--round{
+    .social-media__button{
+      a{
+        border-radius: 9999px;
+        padding: 17px 0;
+      }
+    }
+  }
 }

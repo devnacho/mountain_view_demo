@@ -1,4 +1,4 @@
-%ul.social-media
+%ul.social-media{ class: "#{ ( 'social-media--' + properties[:style] ) if properties[:style] }"}
   - if properties[:facebook_url]
     %li.social-media__button.social-media__button--facebook
       = link_to properties[:facebook_url] do
