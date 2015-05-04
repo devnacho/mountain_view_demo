@@ -1,25 +1,25 @@
 %ul.social-media{ class: "#{ ( 'social-media--' + properties[:style] ) if properties[:style] }"}
   - if properties[:facebook_url]
     %li.social-media__button.social-media__button--facebook
-      = link_to properties[:facebook_url] do
+      = link_to properties[:facebook_url], target: "_blank" do
         %i.fa.fa-facebook
   - if properties[:twitter_url]
     %li.social-media__button.social-media__button--twitter
-      = link_to properties[:twitter_url] do
+      = link_to properties[:twitter_url], target: "_blank"  do
         %i.fa.fa-twitter
-  - if properties[:yotube_url]
+  - if properties[:youtube_url]
     %li.social-media__button.social-media__button--youtube
-      = link_to properties[:yotube_url] do
+      = link_to properties[:youtube_url], target: "_blank"  do
         %i.fa.fa-youtube
   - if properties[:instagram_url]
     %li.social-media__button.social-media__button--instagram
-      = link_to properties[:instagram_url] do
+      = link_to properties[:instagram_url], target: "_blank"  do
         %i.fa.fa-instagram
   - if properties[:vine_url]
     %li.social-media__button.social-media__button--vine
-      = link_to properties[:vine_url] do
+      = link_to properties[:vine_url], target: "_blank"  do
         %i.fa.fa-vine
   - if properties[:google_plus_url]
     %li.social-media__button.social-media__button--google-plus
-      = link_to properties[:google_plus_url] do
+      = link_to properties[:google_plus_url], target: "_blank"  do
         %i.fa.fa-google-plus

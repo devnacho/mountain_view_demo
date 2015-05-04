@@ -1,5 +1,3 @@
-@import "bourbon";
-
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -15,6 +13,9 @@
  *= require_self
  *= require mountain_view
  */
+
+@import "bourbon";
+
 
 body{
   font-family: 'Helvetica Nueue', 'Arial', sans-serif;
