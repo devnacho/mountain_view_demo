@@ -44,6 +44,12 @@ body{
   width: 65.88078%;
   padding: 15px;
   box-sizing: border-box;
+  &__description{
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #333;
+  }
 }
 
 .sidebar{
