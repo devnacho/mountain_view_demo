@@ -1,10 +1,10 @@
 class HomeView
 
-  def initialize
-  end
 
-  def vimeo_video
-    "67992157"
+  def video
+    {
+      vimeo_id: "67992157"
+    }
   end
 
   def social_links
