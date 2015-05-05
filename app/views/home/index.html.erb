@@ -1,13 +1,10 @@
 <div class="content">
-  <%= render_component("breadcrumbs", breadcrumbs: [{title: "Mountains", url: "#"}, {title: "Asia", url: "#"}, {title: "Mount Everest"}] ) %>
+  <%= render_component("breadcrumbs", @home.breadcrumbs ) %>
   <div class="title">
     <h1>Mount Everest, also known in Nepal as Sagarmāthā and in Tibet as Chomolungma, is Earth's highest mountain</h1>
   </div>
-  <%= render_component "video", vimeo_id: @vimeo_video %>
-  <%= render_component "social_media_icons", facebook_url: "https://www.facebook.com/BurtonSnowboards",
-                                             twitter_url: "https://twitter.com/burtonsnowboard",
-                                             instagram_url: "https://instagram.com/burtonsnowboards/",
-                                             youtube_url: "https://www.youtube.com/user/Burtonsnowboards" %>
+  <%= render_component "video", vimeo_id: @home.vimeo_video %>
+  <%= render_component("social_media_icons", @home.social_links) %>
   <div class="content__description">
     <p>
       It is located in the Mahalangur section of the Himalayas. Its peak is 8,848 metres (29,029 ft) above sea level and is the 5th furthest summit from the center of Earth. The international border between China and Nepal runs across the precise summit point. Its massif includes neighboring peaks Lhotse, 8,516 m (27,940 ft); Nuptse, 7,855 m (25,771 ft) and Changtse, 7,580 m (24,870 ft).
@@ -18,31 +15,15 @@
   </div>
   <div class="comments">
     <h4>Comments</h4>
-    <%= render_component "comment", body: "Been there, done that.",
-                                    image: "http://i.imgur.com/RAJCZLC.jpg",
-                                    author: "John Rambo",
-                                    date: 5.days.ago.strftime("%B %-d, %Y") %>
-    <%= render_component "comment", body: "Definitely on my Places to go Wishlist! Planning to go there on 2017",
-                                    image: "http://i.imgur.com/IGUjSla.png",
-                                    author: "John Matrix",
-                                    date: 10.days.ago.strftime("%B %-d, %Y") %>
+    <% @home.comments.each do |comment| %>
+      <%= render_component "comment", comment %>
+    <% end %>
   </div>
 
 </div>
 <div class="sidebar">
   <h2>More mountains</h2>
-  <%= render_component "card", title: "Aconcagua",
-                               description: "Is the highest mountain outside of Asia and by extension the highest point in the Southern Hemisphere.",
-                               link: "http://en.wikipedia.org/wiki/Aconcagua",
-                               image_url: "http://i.imgur.com/FUGkp26.png",
-                               data: [{ title: "Elevation", number: "6960 m" }] %>
-  <%= render_component "card", title: "Mount Kilimanjaro",
-                               description: "It is the highest mountain in Africa and the highest free-standing mountain ",
-                               link: "http://en.wikipedia.org/wiki/Mount_Kilimanjaro",
-                               image_url: "http://i.imgur.com/mNa8TNK.png",
-                               data: [{ title: "Elevation", number: "5895 m" }] %>
-  <%= render_component "card", title: "Mount McKinley",
-                               description: "Mount McKinley or Denali is the highest mountain peak in North America",
-                               link: "http://en.wikipedia.org/wiki/Mount_McKinley",
-                               image_url: "http://i.imgur.com/dqbqDwf.png"%>
+  <% @home.mountains.each do |mountain| %>
+    <%= render_component "card", mountain %>
+  <% end %>
 </div>
