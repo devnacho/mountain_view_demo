@@ -18,5 +18,19 @@
 
 </div>
 <div class="sidebar">
-
+  <h2>More mountains</h2>
+  <%= render_component "card", title: "Aconcagua",
+                               description: "Is the highest mountain outside of Asia and by extension the highest point in the Southern Hemisphere.",
+                               link: "http://en.wikipedia.org/wiki/Aconcagua",
+                               image_url: "http://i.imgur.com/FUGkp26.png",
+                               data: [{ title: "Elevation", number: "6960 m" }] %>
+  <%= render_component "card", title: "Mount Kilimanjaro",
+                               description: "It is the highest mountain in Africa and the highest free-standing mountain ",
+                               link: "http://en.wikipedia.org/wiki/Mount_Kilimanjaro",
+                               image_url: "http://i.imgur.com/mNa8TNK.png",
+                               data: [{ title: "Elevation", number: "5895 m" }] %>
+  <%= render_component "card", title: "Mount McKinley",
+                               description: "Mount McKinley or Denali is the highest mountain peak in North America",
+                               link: "http://en.wikipedia.org/wiki/Mount_McKinley",
+                               image_url: "http://i.imgur.com/dqbqDwf.png"%>
 </div>

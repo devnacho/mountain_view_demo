@@ -39,6 +39,8 @@
       dl{
         display: inline-block;
         width: 32%;
+        padding: 0;
+        margin: 0;
         dt{
           font-size: 20px;
           margin-bottom: 6px;
@@ -49,11 +51,13 @@
           font-size: 11px;
           color: #888;
           font-weight: bold;
+          padding: 0;
+          margin: 0;
         }
       }
     }
     p{
-      color: #B2B2B2;
+      color: #999;
       margin: 0;
       font-size: 13px;
       line-height: 1.5;
