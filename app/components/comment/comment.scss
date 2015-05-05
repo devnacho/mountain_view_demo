@@ -2,10 +2,10 @@
   display: flex;
   max-width: 800px;
   border-bottom: 2px solid #F5F5F5;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
   &__image{
-    flex: 15%;
+    flex: 10%;
     text-align: center;
     img{
       width: 100%;
@@ -19,12 +19,12 @@
     }
   }
   &__content{
-    flex: 85%;
+    flex: 90%;
     margin-left: 20px;
     h1{
       font-weight: bold;
-      margin-bottom: 15px;
-      font-size: 20px;
+      margin-bottom: 10px;
+      font-size: 15px;
     }
     p{
       font-size: 14px;
@@ -35,7 +35,7 @@
     &__date{
       color: #7A4BDA;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 13px;
       text-transform: uppercase;
       margin-left: 3px;
     }

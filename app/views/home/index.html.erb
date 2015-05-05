@@ -15,6 +15,17 @@
       In 1856, the Great Trigonometrical Survey of India established the first published height of Everest, then known as Peak XV, at 29,002 ft (8,840 m). The current official height of 8,848 m (29,029 ft) as recognized by China and Nepal was established by a 1955 Indian survey and subsequently confirmed by a Chinese survey in 1975. In 1865, Everest was given its official English name by the Royal Geographical Society upon a recommendation by Andrew Waugh, the British Surveyor General of India. Waugh named the mountain after his predecessor in the post, Sir George Everest, arguing that there were many local names, against the opinion of Everest.
     </p>
   </div>
+  <div class="comments">
+    <h4>Comments</h4>
+    <%= render_component "comment", body: "Been there, done that.",
+                                    image: "http://i.imgur.com/RAJCZLC.jpg",
+                                    author: "John Rambo",
+                                    date: 5.days.ago.strftime("%B %-d, %Y") %>
+    <%= render_component "comment", body: "Definitely on my Places to go Wishlist! Planning to go there on 2017",
+                                    image: "http://i.imgur.com/IGUjSla.png",
+                                    author: "John Matrix",
+                                    date: 10.days.ago.strftime("%B %-d, %Y") %>
+  </div>
 
 </div>
 <div class="sidebar">
